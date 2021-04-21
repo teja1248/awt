@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FIREBASE CRUD OPERATIONS</title>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="crud.js"></script>
+        <style>
+            #studentList{
+                color:red;
+                background-color: black;
+
+            }
+            .container{
+                border:blue;
+                padding: 10%;
+                background-color:grey;
+                width:auto;
+                align:center;
+                margin-top: 2%;
+                
+
+
+            }
+        </style>
+    </head>
+<body>
+  
+    <div class="container">
+        <h2 align ="center">CRUD OPERATIONS</h2>
+        <br>
+        <div class="row">
+            <label>STUDENT NAME </label>
+            <input type="text" id="uname">
+        </div>
+        <br>
+        <div class="row">
+            <label>ROLL NUMBER </label>
+            <input type="text" id="rno">
+        </div>
+        <br>
+        <div class="row">
+            <label>BRANCH&SECTION</label>
+            <input type="text" id="bns">
+        </div>
+        <br>
+        <div class="row">
+            <button id="REGISTER" type="button" class="btn btn-success" onclick="createStudent()">REGISTER</button>&nbsp;
+            <button id="DISPLAY" type="button" class="btn btn-info" onclick="displayStudent()">DISPLAY</button>&nbsp;
+            <button id="UPDATE" type="button" class="btn btn-primary" onclick="updateStudent()">UPDATE</button>&nbsp;
+            <button id="DELETE" onclick="deleteStudent()" type="button" class="btn btn-danger">DELETE</button>&nbsp;
+        </div>
+        <br>
+        <br>
+        <div id="studentList"></div>
+    </div>
+    
+</body>
+</html>
